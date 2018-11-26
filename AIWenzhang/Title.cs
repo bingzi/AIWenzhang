@@ -9,14 +9,21 @@ namespace AIWenzhang
     class Title
     {
         int id;
-        String name;
-        String gettitle()
+        string name;
+
+        public Title(int id, string name)
+        {
+            this.id = id;
+            this.name = name;
+        }
+
+        string gettitle()
         {
 
             return name;
         }
 
-        public void settitle(String title)
+        public void settitle(string title)
         {
             this.name = title;
         }
